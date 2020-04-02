@@ -26,19 +26,19 @@ Dans Bonita Studio, créer un BDM :
   
 1. Cliquez sur le bouton **Terminer**
 
-> ? info :  
+> ℹ info :  
 > **Obligatoire** pour l'attribut d'un objet signifie que l'objet ne peut pas être créé avec une valeur vide. Si l'option **obligatoire** n'est pas cochée, cela signifie qu'un objet peut être créé avec une valeur vide, pour l'attribut « facultatif ». Dans notre exemple, l'attribut _answer_ est facultatif, car, au démarrage du processus, il sera vide. Plus loin dans l'exécution du processus, un employé fournira une réponse qui sera donc obligatoire (mais cela n'est pas imposé par la définition du BDM).
 
-> ? avertissement ? :  
+> ⚠ avertissement ⚠ :  
 > Lorsque vous modifiez le BDM dans Bonita Studio, il est toujours recommandé de réinitialiser la base de données après avoir apporté une modification au modèle. Cochez la case « Reset BDM database », affichée dans la fenêtre contextuelle lorsque vos validez vos modifications.
 
-> ? info :  
+> ℹ info :  
 > Lorsque vous cliquez sur le bouton **Terminer**, trois opérations différentes sont exécutées :
 > - La définition du BDM est enregistrée dans votre projet (dans la catégorie **Modèle de Données Métier**)
 > - Les classes Java sont générées, compilées, packagées et le fichier jar qui en résulte est ajouté à votre projet (dans la catégorie **Dépendances Java**)
 > - Les tables sont créées dans la base de données de test intégrée au Studio Bonita
 
-> ? info :  
-> Bonita Studio utilise h2 pour fournir la base de données à des fins de test. (Vous pouvez utiliser d'autres types de bases de données telles que Oracle, PostgreSQL, MySQL et SQL Server pour un environnement de production). Bonita Studio fournit deux schémas de base de données : un pour le moteur Bonita et un dédié au BDM. Vous pouvez afficher les tables créées dans la base de données BDM h2 en cliquant dans le menu de Bonita Studio sur **Développement > Modèle de Données Métier > Consulter les données (console h2)...**. Dans la console h2 (une interface web), vous pouvez voir qu'une table nommée « CLAIM » a été créée. Vous pouvez exécuter une requête SQL telle que `SELECT * FROM CLAIM` qui doit retourner un résultat vide, car il n'y a aucune donnée pour l'instant.
+> ℹ info :  
+> Bonita Studio utilise h2 pour fournir la base de données à des fins de test. (Vous pouvez utiliser d'autres types de bases de données telles que Oracle, PostgreSQL, MySQL et SQL Server pour un environnement de production). Bonita Studio fournit deux schémas de base de données : un pour le moteur Bonita et un dédié au BDM. Vous pouvez afficher les tables créées dans la base de données BDM h2 en cliquant dans le menu de Bonita Studio sur **Développement > Modèle de Données Métier > Consulter les données (console h2)...**. Dans la console h2 (une interface web), vous pouvez voir qu'une table nommée `CLAIM` a été créée. Vous pouvez exécuter une requête SQL telle que `SELECT * FROM CLAIM` qui doit retourner un résultat vide, car il n'y a aucune donnée pour l'instant.
 
 Vous disposez maintenant d'un modèle de gestion des données métier entièrement fonctionnel. Vous êtes prêt(e) à passer au chapitre suivant et à [commencer à renseigner la base de données avec les données collectées par le processus](declare-business-variables.md). 
