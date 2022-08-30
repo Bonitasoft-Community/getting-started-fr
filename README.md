@@ -1,3 +1,5 @@
+:warning: For an update to date Getting started tutorial, visit the [Bonita documentation site](https://documentation.bonitasoft.com/bonita/2022.1/getting-started/getting-started-index)
+
 # Getting started: workspace et fichier .bos
 
 ## Description
